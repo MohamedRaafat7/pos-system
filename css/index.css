@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,26 +7,23 @@
 }
 
 body {
-    font-family:  'Gilroy-Bold', sans-serif;;
+    font-family: 'Gilroy-Bold', sans-serif;
     background-color: #f5f5f5;
 }
 
-
-
 .div1 {
-    padding: 1rem 6rem;
+    padding: 1rem;
 }
 
 .img-fluid {
-   max-width: 230px;
+    max-width: 150px;
     height: auto;
     object-fit: contain;
-    
 }
 
 .caption-text {
     text-align: center;
-    margin-bottom: 35px;
+    margin-top: 15px;
 }
 
 .form {
@@ -120,7 +119,38 @@ a:hover {
 }
 
 .carousel-item img {
-    height: 480px;
+    height: 300px;
     object-fit: contain;
     border-radius: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .div1 {
+        padding: 1rem;
+    }
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        flex-direction: column;
+        padding: 0;
+    }
+    .div1 {
+        padding: 1rem;
+    }
+    .carousel-item img {
+        height: 180px;
+    }
+    .social-login {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-login a {
+        width: 80%;
+        margin-bottom: 10px;
+    }
 }
