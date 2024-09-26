@@ -80,7 +80,7 @@ main {
 }
 .category:hover{
     cursor: pointer;
-    background-color: rgb(236, 236, 155);
+    
 }
 .category img {
     max-width: 100%;
